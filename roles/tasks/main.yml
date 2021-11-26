@@ -1,7 +1,0 @@
-- include: "1.setup_requirements.yml"
-- include: "2.install.yml"
-- include: "3.copy.yml"
-#- include: "4.selinux.yml"
-- include: "5.firewall.yml"
-- include: "6.systemd.yml"
-- include: "7.start.yml"
