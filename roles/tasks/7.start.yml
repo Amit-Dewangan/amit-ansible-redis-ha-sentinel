@@ -1,0 +1,16 @@
+---
+- name: Restart Redis
+  service:
+    name: redis
+    state: restarted
+  become: true
+  when: redis_role != "sentinel"
+
+- name: Restart Redis Sentinel
+  service:
+    name: redis-sentinel
+    state: restarted
+  become: true
+
+- debug:
+    msg: "Restart All servers to resolve the overcommit and transparent huge page warnings"
