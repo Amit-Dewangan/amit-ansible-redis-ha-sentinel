@@ -1,0 +1,2 @@
+[redis_nodes]
+localhost redis_role=master
