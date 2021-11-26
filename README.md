@@ -1,0 +1,1 @@
+# amit-ansible-redis-ha-sentinel
